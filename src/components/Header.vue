@@ -8,7 +8,7 @@
       My First Vue App
     </h1>
     <div class="bg-primary w-1/6 h-1 rounded-full"></div>
-    <p class="text-white text-2xl font-semibold uppercase p-16">What shall I make first?</p>
+    <p class="text-white text-2xl font-semibold uppercase p-16">But what shall I make first?</p>
   </header>
 </template>
 

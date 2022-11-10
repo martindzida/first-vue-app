@@ -2,6 +2,12 @@
 import Header from './components/Header.vue';
 import AddIdea from './components/AddIdea.vue';
 import IdeasList from './components/IdeasList.vue';
+import {ref} from 'vue';
+const idea = ref('');
+
+const setIdea = (val: string) => {
+  idea.value = val;
+};
 </script>
 
 <template>
@@ -10,7 +16,10 @@ import IdeasList from './components/IdeasList.vue';
       <Header />
     </section>
     <section>
-      <AddIdea />
+      <AddIdea @get-idea="setIdea" />
+      <p class="text-white">
+        {{ idea }}
+      </p>
       <IdeasList />
     </section>
   </div>
